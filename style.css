@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: #F7F3EA;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
+}
+
+h1 {
+    font-family: Titillium Web;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+h2 {
+    font-family: Titillium Web;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+h3 {
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #643A79;
+    border-radius: 5px;
+}
+
+p {
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+p2 {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;    
+}
+
+.button {
+    background-color: #87509C;
+    color: #F7F3EA;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 4px 18px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px 18px;
+}
+
+.btn-home {
+    background-color: #EB7D4B;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.0002px;
+    line-height: 27px;
+    padding: 10px 30px;
+    border: none;
+    box-sizing: border-box;
+    width:fit-content;
+    border-radius: 5px;
+}
+
+/* .porfolio {
+    background-color: #000000 8%;
+    color: #393939;    
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+} */
+
+.button:hover {
+    background-color: #643A79;
+}
+
+/* .portfolio:hover{
+    background-color: #792323;
+} */
+
+/* Header */
+.header {
+    background-color: #87509C;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; /* so that it keeps there*/
+    padding: 15px 0px 15px 0px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    margin-right: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* Header */
+
+.container {
+    width: 80%;
+    /* background-color: yellow; */ /*for debug*/
+    margin-right: auto; /*to center the container*/
+    margin-left: auto;
+    max-width: 1140px; /*to ensure width for different screens*/
+}
+
+/* Home */
+.home {
+    background-color: #87509C;
+    height: 100vh;
+}
+
+.home-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    padding-bottom: 20px;
+}
+/* Home */
+
+/* Services */
+.services {
+    background-color: #17C2A4;
+}
+
+.services-content {
+    padding: 106.5px 80px 122px 80px;
+}
+/* Services */
