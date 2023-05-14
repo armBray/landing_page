@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-family: Titillium Web;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 64px;
@@ -21,25 +21,29 @@ h1 {
 }
 
 h2 {
-    font-family: Titillium Web;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
     font-size: 40px;
     font-weight: 700;
     line-height: 61px;
     letter-spacing: 0em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h3 {
-    font-family: Titillium Web;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
     font-size: 24px;
     font-weight: 700;
     line-height: 37px;
-    letter-spacing: 0em;
-    text-align: left;    
+    text-align: center;
+    text-align: left;   
+    text-transform: uppercase; 
 }
 
 a {
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -55,27 +59,27 @@ a:hover {
 }
 
 p {
-    font-family: Titillium Web;
-    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 18px;
     line-height: 27px;
-    letter-spacing: 0em;
     text-align: center;
 }
 
 p2 {
-    font-family: Titillium Web;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: center;    
 }
 
 .button {
     background-color: #87509C;
     color: #F7F3EA;
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -89,7 +93,7 @@ p2 {
 
 .btn-home {
     background-color: #EB7D4B;
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18.0002px;
@@ -101,24 +105,9 @@ p2 {
     border-radius: 5px;
 }
 
-/* .porfolio {
-    background-color: #000000 8%;
-    color: #393939;    
-    font-family: Titillium Web;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-} */
-
 .button:hover {
     background-color: #643A79;
 }
-
-/* .portfolio:hover{
-    background-color: #792323;
-} */
 
 /* Header */
 .header {
@@ -187,5 +176,32 @@ p2 {
 
 .services-content {
     padding: 106.5px 80px 122px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-specification {
+    width: auto;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 30px;
+}
+
+.services-specification div {
+    background-color: black;
+}
+
+.services-specification div h3 {
+    text-align: center;
+}
+
+.services-specification div p {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center; 
 }
 /* Services */
