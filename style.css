@@ -183,7 +183,7 @@ p2 {
 
 .services-content {
     width: 100%;
-    padding: 106.5px 80px 122px 80px;
+    padding: 106px 80px 106px 80px;
     display: flex;
     flex-direction: column;
 }
@@ -195,6 +195,7 @@ p2 {
 
 .services-specification {
     width: 100%;
+    padding-top: 40px;
     display: flex;
         flex-direction: row;
         /* column-gap: 50px; */
@@ -202,8 +203,9 @@ p2 {
 }
 
 .services-specification div {
-    background-color: black;
+    /* background-color: black;  */
     text-align: center;
+    padding: 20px;
 }
 
 .col {
@@ -211,7 +213,9 @@ p2 {
 }
 
 .services-specification div h3 {
+    /* background-color: yellow;  */
     text-align: center;
+    padding: 10px;
 }
 
 .services-specification div p {
