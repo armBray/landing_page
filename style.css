@@ -11,6 +11,16 @@ body {
     font-size: 100%;
 }
 
+.container {
+    width: 80%;
+    /* background-color: yellow; */ /*for debug*/
+    margin-right: auto; /*to center the container*/
+    margin-left: auto;
+    max-width: 1140px; /*to ensure width for different screens*/
+    padding-top: 106px;
+    padding-bottom: 106px;
+}
+
 h1 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 42px;
@@ -65,15 +75,15 @@ p {
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+    padding-top: 7px;
 }
 
-p2 {
-    font-family: 'Titillium Web', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: center;    
+hr { 
+    width:87px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
 }
 
 .button {
@@ -116,13 +126,13 @@ p2 {
     left: 0;
     top: 0;
     width: 100%; /* so that it keeps there*/
-    padding: 15px 0px 15px 0px;
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 15px 0px 15px 0px;
 }
 
 .logo {
@@ -141,21 +151,6 @@ p2 {
     padding-left: 10px;
 }
 /* Header */
-
-.container {
-    width: 80%;
-    /* background-color: yellow; */ /*for debug*/
-    margin-right: auto; /*to center the container*/
-    margin-left: auto;
-    max-width: 1140px; /*to ensure width for different screens*/
-}
-
-/* .subcontainer {
-    width: 100%;
-    background-color: yellow; /*for debug*/
-    /* margin-right: auto; to center the container */
-    /* margin-left: auto;      */
-/* }   */
 
 /* Home */
 .home {
@@ -186,6 +181,11 @@ p2 {
     padding: 106px 80px 106px 80px;
     display: flex;
     flex-direction: column;
+}
+
+.services-content hr {
+    background: #000000;
+    opacity: 0.15;
 }
 
 .services-content p {
@@ -228,3 +228,73 @@ p2 {
     padding: 0;
 }
 /* Services */
+
+
+/* Team */
+.team {
+    background-color: #E7F1F8;
+}
+
+.team h2 {
+    color: #3C4761;
+}
+
+.team-specification {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+        flex-direction: row;
+        /* column-gap: 50px; */
+        justify-content: space-around;
+}
+
+.team hr {
+    background: #BDD1DF;
+    opacity: 0.75;
+}
+
+.team p {
+    color: #3C4761;
+}
+
+.team-specification div {
+    /* background-color: black;  */
+    text-align: center;
+    padding: 20px;
+}
+
+.team h3 {
+    color: #27283D;
+    text-transform: capitalize;
+
+    text-align: center;
+}
+
+.team h4 {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #30BAE7;
+}
+
+.team img {
+    border-radius: 50%;
+    height: 190px;
+}
+
+.team-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team i {
+    color: #000000;
+    font-size: 50px;
+    padding: 0px 5px;
+}
+/* Team */
