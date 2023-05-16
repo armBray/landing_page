@@ -1,3 +1,8 @@
+/* bugs */
+/*  - line over when scroll
+    -  */
+/* bugs */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -183,12 +188,17 @@ hr {
     flex-direction: column;
 }
 
+.services-content h3 {
+    color: white;
+}
+
 .services-content hr {
     background: #000000;
     opacity: 0.15;
 }
 
 .services-content p {
+    color: white;
     padding-left: 180px;
     padding-right: 180px;
 }
@@ -266,7 +276,6 @@ hr {
 .team h3 {
     color: #27283D;
     text-transform: capitalize;
-
     text-align: center;
 }
 
@@ -277,7 +286,6 @@ hr {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-
     color: #30BAE7;
 }
 
@@ -298,3 +306,111 @@ hr {
     padding: 0px 5px;
 }
 /* Team */
+
+/* Skills */
+
+.skills {
+    background-color: #FFFFFF;
+}
+
+.skills-content{
+    padding-bottom: 100px;
+}
+
+.skills-content h2,h3,p {
+    color: #3C4761;
+}
+
+.skills-content hr {
+    background-color: #DFE8ED;
+}
+
+.skills-specification {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    display: flex;
+        flex-direction: row;
+        /* column-gap: 50px; */
+        justify-content: space-around;
+}
+
+.skills-specification div,h3 {
+    /* background-color: black;  */
+    text-align: center;
+    padding: 20px;
+}
+
+:root {
+    --size: 200px;
+    --bord: 0px;
+}
+
+.chart {
+    width: var(--size);
+    height: var(--size);
+    margin: 1em auto;
+    border-radius: 50%;
+    /* background-image: conic-gradient(lightseagreen var(--value), lightgrey var(--value)); */
+    /* -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - var(--bord)),#fff calc(100% - var(--bord) + 1px));
+    mask:radial-gradient(farthest-side,transparent calc(100% - var(--bord)),#fff calc(100% - var(--bord) + 1px)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart::after {
+    width: calc(100% - var(--bord));
+    height: calc(100% - var(--bord));
+    background: white;
+    border-radius: inherit;
+
+    content: "75%";
+    color: #3C4761;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 76px;
+}
+
+.x-65 {
+    --value: 65%;
+    background-image: conic-gradient(#3376bd var(--value), lightgrey var(--value));
+}
+
+.x-65::after {
+    content: "65%";
+}
+
+.x-70 {
+    --value: 70%;
+    background-image: conic-gradient(#edae49 var(--value), lightgrey var(--value));
+}
+
+.x-70::after {
+    content: "70%";
+}
+
+.x-85 {
+    --value: 85%;
+    background-image: conic-gradient(#e63946 var(--value), lightgrey var(--value));
+}
+
+.x-85::after {
+    content: "85%";
+}
+
+.x-90 {
+    --value: 90%;
+    background-image: conic-gradient(#00798c var(--value), lightgrey var(--value));
+}
+
+.x-90::after {
+    content: "90%";
+}
+/* Skills */
