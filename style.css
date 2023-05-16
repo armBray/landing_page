@@ -1,6 +1,8 @@
 /* bugs */
 /*  - line over when scroll
-    -  */
+    - chart responsive in height 
+    - team icons
+    - */
 /* bugs */
 
 * {
@@ -14,16 +16,6 @@ body {
     color: #F7F3EA;
     font-family: 'Titillium Web', sans-serif;
     font-size: 100%;
-}
-
-.container {
-    width: 80%;
-    /* background-color: yellow; */ /*for debug*/
-    margin-right: auto; /*to center the container*/
-    margin-left: auto;
-    max-width: 1140px; /*to ensure width for different screens*/
-    padding-top: 106px;
-    padding-bottom: 106px;
 }
 
 h1 {
@@ -91,6 +83,15 @@ hr {
     border: none;
 }
 
+img {
+    height: 190px;
+    width: 190px;
+    /* responsive */
+    max-width: 100%;
+    min-width: 60px;
+    height: auto;
+}
+
 .button {
     background-color: #87509C;
     color: #F7F3EA;
@@ -124,26 +125,37 @@ hr {
     background-color: #643A79;
 }
 
+.container {
+    width: 80%;
+    /* background-color: yellow; */ /*for debug*/
+    /* to center the container */
+    margin-right: auto; 
+    margin-left: auto;
+    max-width: 1140px; /*to ensure width for different screens*/
+    padding-top: 150px;
+    padding-bottom: 106px;
+}
+
 /* Header */
 .header {
     background-color: #87509C;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%; /* so that it keeps there*/
+    position: fixed; /* so that it keeps there*/
+        left: 0;
+        top: 0;
+    width: 100%; 
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 0px 15px 0px;
+    padding: 10px 0px 15px 0px;
 }
 
 .logo {
     font-family: 'Pacifico', cursive;
     font-size: 36px;
-    margin-right: auto;
 }
 
 .menu ul {
@@ -190,6 +202,7 @@ hr {
 
 .services-content h3 {
     color: white;
+    /* word-wrap: break-word; */
 }
 
 .services-content hr {
@@ -212,6 +225,11 @@ hr {
         justify-content: space-around;
 }
 
+.services-specification img{
+    width: auto;
+    height: auto;
+}
+
 .services-specification div {
     /* background-color: black;  */
     text-align: center;
@@ -220,15 +238,16 @@ hr {
 
 .col {
     width: 30%;
+    /* max-width: 100%; */
 }
 
-.services-specification div h3 {
+.services-specification h3 {
     /* background-color: yellow;  */
     text-align: center;
     padding: 10px;
 }
 
-.services-specification div p {
+.services-specification p {
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -291,10 +310,9 @@ hr {
 
 .team img {
     border-radius: 50%;
-    height: 190px;
 }
 
-.team-icons{
+.team-icons {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -317,7 +335,8 @@ hr {
     padding-bottom: 100px;
 }
 
-.skills-content h2,h3,p {
+.skills-content h2,
+.skills-content p {
     color: #3C4761;
 }
 
@@ -335,10 +354,17 @@ hr {
         justify-content: space-around;
 }
 
-.skills-specification div,h3 {
+.skills-specification div{
     /* background-color: black;  */
     text-align: center;
     padding: 20px;
+}
+
+.skills-specification h3 {
+    /* background-color: black;  */
+    text-align: center;
+    padding: 20px;
+    color: black;
 }
 
 :root {
@@ -357,11 +383,15 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* responsive */
+    max-width: 100%;
 }
 
 .chart::after {
     width: calc(100% - var(--bord));
     height: calc(100% - var(--bord));
+
     background: white;
     border-radius: inherit;
 
@@ -376,9 +406,13 @@ hr {
     font-weight: 300;
     font-size: 50px;
     line-height: 76px;
+
+    /* responsive */
+    max-width: 100%;
 }
 
 .x-65 {
+
     --value: 65%;
     background-image: conic-gradient(#3376bd var(--value), lightgrey var(--value));
 }
@@ -414,3 +448,214 @@ hr {
     content: "90%";
 }
 /* Skills */
+
+/* About */
+.about {
+    background-color: #D74680;
+}
+
+.about-content {
+    padding-bottom: 100px;
+    justify-self: center;
+}
+
+.about-content h2,
+.skills-content h3,
+.about-content p {
+    color: white;
+}
+
+.about-content hr {
+    background: #000000;
+    opacity: 0.15;
+}
+
+.about-specification {
+    display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 50px;
+        row-gap: 50px;
+    padding-top: 50px;
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); */
+    font-size: 30px;
+    text-align: center;
+    /* padding: 20px; */
+
+    display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        max-width: 100%;
+}
+
+.grid-item img {
+    /* border: 1px solid #00798c; */
+    border-radius: 50%;
+    align-self: center;
+    max-width: 100px;
+}
+
+.grid-item-right {
+    /* border: 1px solid #00798c; */
+    max-width: 100%;
+}
+
+.grid-item-right p
+{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    font-style: italic;
+    text-align: left;
+}
+
+.grid-item-right h3
+{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    text-transform: capitalize;
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.grid-item-right h4 {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFDD99;
+    text-align: left;
+}
+
+/* About */
+
+/* Contact */
+.contact {
+    background-color: #3C5499;
+}
+
+.contact-content {
+    display: flex;
+        flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.contact-content h2,
+.skills-content h3,
+.contact-content p {
+    color: white;
+}
+
+.contact-content hr {
+    background: #273A71;
+}
+
+.contact-specification {
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-specification input{
+    background-color: #273A71;
+    text-decoration-color: white;
+    border-radius: 10px;
+    border: none;
+    Height: 56px;
+    padding: 15px 10px;
+    margin: 15px 10px;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.contact-specification textarea{
+    background-color: #273A71;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    Height: 300px;
+    padding: 15px 10px;
+    margin: 15px 10px;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.btn-send{
+    background-color: #30BAE7;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.0002px;
+    line-height: 27px;
+    padding: 10px 30px;
+    border: none;
+    box-sizing: border-box;
+    width:fit-content;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.btn-send:hover {
+    background-color: #643A79;
+}
+/* Contact */
+
+/* Footer */
+.footer {
+    background-color: #344B8E;
+    width: 100%; 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.footer-container a:hover {
+    background-color: #344B8E;
+    color: #30BAE7;
+}
+/* Footer */ 
+
+
+/* Responsive */
+@media screen and (max-width: 740px) {
+    .header-container  {
+        flex-direction: column;
+        /* width: auto; */
+    }
+    .logo {
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .home-content{
+        padding-top: 180px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+}
+/* Responsive */
