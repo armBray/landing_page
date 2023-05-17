@@ -205,12 +205,14 @@
             <hr>
             <p>Street, Nation, CAP, Tel</p>
             <div class="container contact-specification">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="E-mail">
-                <textarea placeholder="Message"></textarea>
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Message (max 500 characters)" maxlength="500"></textarea>
+                    <button class="button btn-send" id="btn-send">send message</button>
+                </form>
             </div>
-            <button class="button btn-send">send message</button>
-        </div>
+          </div>
     </section>
 
     <footer class="footer">
@@ -223,7 +225,10 @@
                     <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
             </nav>
+            <div class="copyright">Arm Bray copyright © 2023</div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

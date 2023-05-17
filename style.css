@@ -112,6 +112,7 @@ img {
     box-sizing: border-box;
     width:fit-content;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -564,12 +565,17 @@ img {
 }
 
 .contact-specification {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.contact-specification form {
     display: grid;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.contact-specification input{
+.contact-specification input {
     background-color: #273A71;
     border-radius: 10px;
     border: none;
@@ -582,13 +588,15 @@ img {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-.contact-specification input::placeholder{
     color: white;
 }
 
-.contact-specification textarea{
+.contact-specification input::placeholder,
+.contact-specification input:focus {
+    color: white;
+}
+
+.contact-specification textarea {
     background-color: #273A71;
     border-radius: 10px;
     border: none;
@@ -601,13 +609,15 @@ img {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-.contact-specification textarea::placeholder{
     color: white;
 }
 
-.btn-send{
+.contact-specification textarea::placeholder,
+.contact-specification textarea:focus {
+    color: white;
+}
+
+.btn-send {
     background-color: #30BAE7;
     color: white;
     font-family: 'Titillium Web', sans-serif;
@@ -620,7 +630,8 @@ img {
     box-sizing: border-box;
     width:fit-content;
     border-radius: 5px;
-    align-self: center;
+    justify-self: center;
+    cursor: pointer;
 }
 
 .btn-send:hover {
@@ -636,7 +647,7 @@ img {
 
 .footer-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 0px 30px 0px;
@@ -646,6 +657,11 @@ img {
     background-color: #344B8E;
     color: #30BAE7;
 }
+
+.footer-container .copyright {
+    padding: 10px 0px 0px 0px;
+}
+
 /* Footer */ 
 
 
