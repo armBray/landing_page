@@ -1,8 +1,6 @@
 /* bugs */
-/*  - line over when scroll
-    - chart responsive in height 
-    - team icons
-    - */
+/*  - chart responsive in height 
+    -  */
 /* bugs */
 
 * {
@@ -58,11 +56,6 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
-}
-
-a:hover {
-    background-color: #643A79;
-    border-radius: 5px;
 }
 
 p {
@@ -142,6 +135,7 @@ img {
     position: fixed; /* so that it keeps there*/
         left: 0;
         top: 0;
+        z-index: 10;
     width: 100%; 
 }
 
@@ -167,6 +161,14 @@ img {
     padding-right: 10px;
     padding-left: 10px;
 }
+
+.menu a:hover {
+    background-color: #643A79;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /* Header */
 
 /* Home */
@@ -314,14 +316,20 @@ img {
 
 .team-icons {
     width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.team-icons ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .team i {
     color: #000000;
     font-size: 50px;
-    padding: 0px 5px;
 }
 /* Team */
 
@@ -336,8 +344,9 @@ img {
 }
 
 .skills-content h2,
+.skills-content h3,
 .skills-content p {
-    color: #3C4761;
+    color: #3C4761
 }
 
 .skills-content hr {
@@ -364,7 +373,6 @@ img {
     /* background-color: black;  */
     text-align: center;
     padding: 20px;
-    color: black;
 }
 
 :root {
@@ -412,7 +420,6 @@ img {
 }
 
 .x-65 {
-
     --value: 65%;
     background-image: conic-gradient(#3376bd var(--value), lightgrey var(--value));
 }
@@ -460,7 +467,7 @@ img {
 }
 
 .about-content h2,
-.skills-content h3,
+.about-content h3,
 .about-content p {
     color: white;
 }
@@ -547,7 +554,7 @@ img {
 }
 
 .contact-content h2,
-.skills-content h3,
+.contact-content h3,
 .contact-content p {
     color: white;
 }
@@ -564,7 +571,6 @@ img {
 
 .contact-specification input{
     background-color: #273A71;
-    text-decoration-color: white;
     border-radius: 10px;
     border: none;
     Height: 56px;
@@ -576,12 +582,14 @@ img {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+.contact-specification input::placeholder{
+    color: white;
 }
 
 .contact-specification textarea{
     background-color: #273A71;
-    color: white;
     border-radius: 10px;
     border: none;
     Height: 300px;
@@ -593,7 +601,10 @@ img {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+.contact-specification textarea::placeholder{
+    color: white;
 }
 
 .btn-send{
@@ -640,6 +651,12 @@ img {
 
 /* Responsive */
 @media screen and (max-width: 740px) {
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 10px;
+    }
     .header-container  {
         flex-direction: column;
         /* width: auto; */
@@ -651,11 +668,13 @@ img {
     .home-content{
         padding-top: 180px;
     }
-    h1 {
-        font-size: 25px;
+    .services-content p {
+        padding-left: 3%;
+        padding-right: 3%;
     }
-    h3 {
-        font-size: 10px;
+    .about-specification {
+        display: grid;
+            grid-template-columns: auto;
     }
 }
 /* Responsive */
